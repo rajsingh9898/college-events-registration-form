@@ -4,10 +4,10 @@
   "description": "Technovaganza Event Platform",
   "scripts": {
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
-    "dev:backend": "cd backend && npm run dev",
-    "dev:frontend": "cd frontend && npm start",
-    "build": "cd frontend && npm run build",
-    "start:backend": "cd backend && npm start"
+    "dev:backend": "cd technovaganza-backend && npm run dev",
+    "dev:frontend": "cd technovaganza-frontend && npm start",
+    "build": "cd technovaganza-frontend && npm run build",
+    "start:backend": "cd technovaganza-backend && npm start"
   },
   "devDependencies": {
     "concurrently": "^7.6.0"

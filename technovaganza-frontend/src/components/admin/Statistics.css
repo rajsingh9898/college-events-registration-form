@@ -1,0 +1,59 @@
+/* College Statistics Styles */
+.college-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.college-stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  transition: all 0.3s ease;
+}
+
+.college-stat-item:hover {
+  background: #e9ecef;
+  transform: translateX(5px);
+}
+
+.college-stat-item span {
+  font-weight: 500;
+  color: #333;
+}
+
+.college-stat-item strong {
+  color: #667eea;
+  font-size: 1.1rem;
+}
+
+/* College Filter Styles */
+.college-filter {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  font-size: 14px;
+  width: 100%;
+}
+
+.college-filter:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Responsive College Stats */
+@media (max-width: 768px) {
+  .college-stat-item {
+    padding: 10px 12px;
+  }
+  
+  .college-stat-item strong {
+    font-size: 1rem;
+  }
+}

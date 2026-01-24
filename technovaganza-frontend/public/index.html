@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Technovaganza 2025 - SRMS CET&R</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#7f13ec",
+              "background-light": "#f7f6f8",
+              "background-dark": "#191022",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .glow-shadow {
+        box-shadow:
+          0 0 10px theme("colors.primary"),
+          0 0 20px theme("colors.primary"),
+          0 0 30px theme("colors.primary"),
+          0 0 40px theme("colors.primary");
+      }
+      .glow-shadow-hover:hover {
+        box-shadow:
+          0 0 15px theme("colors.primary"),
+          0 0 25px theme("colors.primary"),
+          0 0 35px theme("colors.primary"),
+          0 0 45px theme("colors.primary");
+      }
+      .background-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        opacity: 0.3;
+      }
+      body {
+        font-family: 'Space Grotesk', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-display bg-background-dark text-white">
+    <div id="root"></div>
+  </body>
+</html>
